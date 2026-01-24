@@ -22,7 +22,7 @@ If you are unfamiliar with making pull requests, you can find plenty of document
 and [on the
 web](https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request)
 
-## Gradescope and Canvas 
+## Gradescope and Canvas
 
 At this [GitHub URL](https://github.com/UseBetterCanvas/canvas-task-extension) you will find a link to a browser extension to add your Gradescope assignments and their due dates to your Canvas site. If you are a Canvas user, you might find this helpful to track all of your assignments in one place.
 
