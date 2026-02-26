@@ -1,0 +1,15 @@
+# Personnel Information
+#
+# This is a commented out example
+# Please fill yours in
+#
+# - name: Alyssa P. Hacker
+#   role: Tutor / Learning Assistant
+#   email: first.last@student.shu.edu
+#   office_hours: M-Th 5:00-8:00PM
+
+- name: Jason Hemann
+  role: Instructor
+  email: hemannja@shu.edu
+  email_link: mailto:hemannja@shu.edu
+  office_hours: "Tue 8:00-9:30AM or by appointment"

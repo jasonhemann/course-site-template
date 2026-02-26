@@ -4,8 +4,9 @@ layout: collection
 collection: people
 ---
 
-| Name  | Contact Address                                        |
-| Jason | [{{ site.author.emailaddr }}]({{ site.author.email }}) |
-|       |                                                        |
+| Name | Role | Contact | Office Hours |
+|------|------|---------|--------------|
+{% for person in site.data.personel %} | {{ person.name }} | {{ person.role | default: "" }} | {% if person.email_link and person.email %}[{{ person.email }}]({{ person.email_link }}){% elsif person.email %}{{ person.email }}{% else %}{% endif %} | {{ person.office_hours | default: "" }} |
+{% endfor %}
 
 ![Logical Distortion]({{ site.baseurl }}/assets/images/aura-of-logical-distortion.gif "Sometimes it helps just having someone else around")
