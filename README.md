@@ -23,12 +23,6 @@ Install Ruby dependencies:
 bundle install
 ```
 
-Build the site once (CI-like check):
-
-```bash
-bundle exec jekyll build
-```
-
 Run locally with live reload:
 
 ```bash
@@ -62,7 +56,6 @@ Typical loop:
 1. Edit `syllabus.md`
 2. Run `bundle exec jekyll serve --livereload`
 3. Review `http://127.0.0.1:4000/course-site-template/syllabus/`
-4. Validate with `bundle exec jekyll build`
 
 If you need PDF output:
 
@@ -80,9 +73,8 @@ Typical loop:
 1. Edit `_data/schedule.yml`
 2. Run local server (`bundle exec jekyll serve --livereload`)
 3. Review `http://127.0.0.1:4000/course-site-template/schedule/`
-4. Validate with `bundle exec jekyll build`
 
 ## Notes
 
 - This repo still uses [`_data/authors.yml`](_data/authors.yml) for site author metadata; keep that file for instructor/sidebar metadata.
-- The first `jekyll build`/`jekyll serve` on a new machine needs internet access to download the remote theme.
+- The first `jekyll serve` on a new machine needs internet access to download the remote theme.
