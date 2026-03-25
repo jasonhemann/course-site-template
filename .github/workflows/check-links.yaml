@@ -1,10 +1,16 @@
-name: ci
-on: page_build
+name: link-check
+on:
+  page_build:
+  workflow_dispatch:
+
 jobs:
   linkinator:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: JustinBeckwith/linkinator-action@v1
+      - uses: actions/checkout@v5
+      - name: Check published links
+        uses: JustinBeckwith/linkinator-action@v2
         with:
-          paths: https://jasonhemann.github.io/course-site-template
+          paths: https://hemann.pl/course-site-template
+          config: linkinator.config.json
+          timeout: 15000
