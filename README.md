@@ -6,7 +6,7 @@ Course site built with Jekyll (GitHub Pages toolchain) and based on Minimal Mist
 
 For local development and testing, install:
 
-1. Ruby `3.3.4` (see [`.ruby-version`](.ruby-version))
+1. Ruby (see [`.ruby-version`](.ruby-version))
 2. Bundler
 3. Git
 
@@ -33,9 +33,9 @@ Then open: `http://127.0.0.1:4000/course-site-template/`
 
 ## Contributor Workflow
 
-### 1) Update course personnel
+### 1) Update site author / people-page information
 
-A common contributor task is updating the People page. In this template, that data lives in [`_data/personel.yaml`](_data/personel.yaml), and the page is rendered from [`people.md`](people.md).
+A common contributor task is updating the People page. That data lives in [`_data/personnel.yaml`](_data/personnel.yaml), and the page is rendered from [`people.md`](people.md).
 
 Each entry should include:
 
@@ -45,7 +45,7 @@ Each entry should include:
 - `email_link` (typically `mailto:...`, or leave blank)
 - `office_hours` (or leave blank)
 
-This is just one example of the general contributor loop for data-driven pages: update the source data, run the site locally, and review the rendered page.
+The general contributor loop is: update the source data, run the site locally, and review the rendered page.
 
 ### 2) Update syllabus content
 
@@ -74,11 +74,8 @@ Typical loop:
 2. Run local server (`bundle exec jekyll serve --livereload`)
 3. Review `http://127.0.0.1:4000/course-site-template/schedule/`
 
-If a derived course repo adds assignment writeups, starter files, or other course materials elsewhere, update those alongside the relevant schedule entries.
-
 ## Notes
 
 - The local Ruby/Jekyll toolchain is pinned in [`Gemfile`](Gemfile), [`Gemfile.lock`](Gemfile.lock), and [`.ruby-version`](.ruby-version).
-- This template still uses [`_data/authors.yml`](_data/authors.yml) for site author metadata; keep that file for instructor/sidebar metadata.
-- This template currently spells the personnel data file as [`_data/personel.yaml`](_data/personel.yaml); keep that filename unless you also update references such as [`people.md`](people.md).
+- This template uses [`_data/authors.yml`](_data/authors.yml) for site author metadata; keep that file for instructor/sidebar metadata.
 - The first `jekyll serve` on a new machine needs internet access to download the remote theme.
