@@ -23,6 +23,14 @@ Install Ruby dependencies:
 bundle install
 ```
 
+Build the site once:
+
+```bash
+bundle exec jekyll build
+```
+
+(In some shell environments, you might need `LANG=en_US.UTF-8 LC_ALL=en_US.UTF-8 bundle exec jekyll build`.)
+
 Run locally with live reload:
 
 ```bash
@@ -35,7 +43,7 @@ Then open: `http://127.0.0.1:4000/course-site-template/`
 
 ### 1) Update site author / people-page information
 
-A common contributor task is updating the People page. That data lives in [`_data/personnel.yaml`](_data/personnel.yaml), and the page is rendered from [`people.md`](people.md).
+A common contributor task is updating the People page. That data lives in [`_data/personnel.yml`](_data/personnel.yml), and the page is rendered from [`people.md`](people.md).
 
 Each entry should include:
 
